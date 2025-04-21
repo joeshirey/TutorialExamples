@@ -86,7 +86,7 @@ sequenceDiagram
     CartSvc-->>CO: (OK)
     Note over CO: Order Placed Successfully
     CO-->>FE: PlaceOrderResponse(Order Details)
-end
+
 ```
 *(Note: Some intermediate calls like currency conversion for every item are simplified in the diagram for clarity).*
 
