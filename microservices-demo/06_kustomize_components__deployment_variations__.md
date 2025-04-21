@@ -239,18 +239,18 @@ Kustomize acts as a pre-processor. It takes the base manifests and the instructi
 ```mermaid
 graph LR
     subgraph Input Configuration
-        A[Base Manifests (base/)]
-        B[Component 1 (e.g., components/cymbal-branding/)]
-        C[Component 2 (e.g., components/google-cloud-ops/)]
+        A[Base Manifests]
+        B[Component 1]
+        C[Component 2 ]
         D[Main kustomization.yaml]
     end
 
-    subgraph Kustomize Processing (`kubectl apply -k .`)
+    subgraph Kustomize Processing 
         K[Kustomize Engine]
     end
 
     subgraph Output
-        E[Final Customized Manifests (merged YAML)]
+        E[Final Customized Manifests]
     end
 
     subgraph Deployment Target
