@@ -68,7 +68,7 @@ sequenceDiagram
     CurrencySvc-->>FE: List of Currencies
     Note over FE: Combine data into HTML page
     FE-->>User Browser: HTML Page
-end
+
 ```
 
 ## A Peek Inside the Code (Go)
