@@ -82,7 +82,6 @@ sequenceDiagram
     Note over FE,User: Combine all info and build the page
     FE-->>User: Display Product Page with Recommendations
 
-end
 ```
 
 ## How Services Talk & Run
