@@ -81,6 +81,7 @@ sequenceDiagram
     PCS-->>FE: Tripod Details
     Note over FE,User: Combine all info and build the page
     FE-->>User: Display Product Page with Recommendations
+
 end
 ```
 
