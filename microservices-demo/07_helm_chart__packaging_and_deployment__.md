@@ -179,7 +179,7 @@ What actually happens when you run `helm install`?
 sequenceDiagram
     participant User
     participant Helm CLI
-    participant Chart Files (templates/, values.yaml)
+    participant Chart Files
     participant K8s API as Kubernetes API Server
 
     User->>Helm CLI: helm install my-release ./helm-chart --set loadGenerator.create=false
@@ -191,8 +191,7 @@ sequenceDiagram
     Helm CLI->>K8s API: Apply generated YAML manifests
     K8s API-->>Helm CLI: Resources created/updated
     Helm CLI->>Helm CLI: Record deployment as 'my-release' (v1)
-    Helm CLI-->>User: Installation successful
-end
+
 ```
 
 ## Conclusion
